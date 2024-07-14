@@ -21,6 +21,7 @@ To reproduce the experiments or run the code:
 - Ensure Python 3.x and pip are installed.
 - Clone the repository and navigate to the project directory.
 - Install dependencies using `pip install -r requirements.txt`.
+- Download the model after training it from fasttext.py file then upload to a app.py file for processing or simulating the project.
 - Run the main script or Jupyter notebook to train models, calculate embeddings, and evaluate using the STS Benchmark dataset.
 
 ## Files and Directory Structure
