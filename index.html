@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Similarity Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentence Similarity Analyzer</h1>
+        <button class="selected" id="skipgram" onclick="selectSkipGram()">SkipGram (100)</button>
+        <button class="notselected" id="cbow" onclick="selectCBOW()">CBOW (100)</button>
+        <form id="similarity-form">
+            <div class="input-group">
+                <label for="sentence1">Sentence 1:</label>
+                <input type="text" id="sentence1" name="sentence1" placeholder="Enter your first sentence">
+            </div>
+            <div class="input-group">
+                <label for="sentence2">Sentence 2:</label>
+                <input type="text" id="sentence2" name="sentence2" placeholder="Enter your second sentence">
+            </div>
+            <button type="submit">Analyze Similarity</button>
+        </form>
+        <div id="chart-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
