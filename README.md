@@ -1,7 +1,7 @@
 # FastText Word Embeddings and STS Benchmark Evaluation
 
 ## Project Overview
-This project demonstrates the use of FastText for training word embeddings and evaluating them on the STS Benchmark dataset. FastText is employed to train continuous bag of words (CBOW) models, which are then used to calculate word similarities and sentence embeddings. The STS Benchmark dataset is utilized to evaluate the performance of these embeddings against human-annotated similarity scores using Pearson correlation coefficient.
+This project demonstrates the use of FastText for training word embeddings and evaluating them on the STS Benchmark dataset. FastText is employed to train continuous bag of words (CBOW) and skipgram models, which are then used to calculate word similarities and sentence embeddings. The STS Benchmark dataset is utilized to evaluate the performance of these embeddings against human-annotated similarity scores using Pearson correlation coefficient.
 
 ## Data Preparation
 ### Wikipedia Text Preprocessing
@@ -21,7 +21,7 @@ To reproduce the experiments or run the code:
 - Ensure Python 3.x and pip are installed.
 - Clone the repository and navigate to the project directory.
 - Install dependencies using `pip install -r requirements.txt`.
-- Download the model after training it from .ipnb file then upload to a app.py file for processing or simulating the project.
+- Download the model after training it from .ipynb file then upload to a app.py file for processing or simulating the project.
 - Run the main script or Jupyter notebook to train models, calculate embeddings, and evaluate using the STS Benchmark dataset.
 
 ## Files and Directory Structure
